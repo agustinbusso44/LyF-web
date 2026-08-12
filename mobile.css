@@ -1,0 +1,60 @@
+/* Ajustes dedicados a pantallas táctiles y celulares */
+@media (max-width: 600px) {
+  body { overflow-x: hidden; }
+
+  .site-header { padding: 8px 18px; }
+  .menu-button { min-width: 44px; min-height: 44px; padding: 0; }
+  .navigation { padding: 23px 22px 25px; box-shadow: 0 12px 22px rgba(17,34,29,.08); }
+  .navigation a { padding: 7px 0; }
+
+  .hero { min-height: auto; padding: 52px 22px 38px; }
+  .hero h1 { font-size: clamp(44px, 13vw, 60px); letter-spacing: -.02em; }
+  .hero-text { font-size: 16px; margin: 22px 0 28px; }
+  .hero-actions { width: 100%; gap: 14px; }
+  .hero-actions .button { width: 100%; min-height: 52px; }
+  .hero-actions .button-plain { justify-content: flex-start; min-height: auto; }
+  .hero-art { height: 280px; margin: 19px -22px 0; }
+  .arch-back { transform: translate(10px, -6px) scale(.58); transform-origin: bottom center; }
+  .arch-front { transform: scale(.58); transform-origin: bottom center; }
+  .hero-art > p { right: 20px; bottom: 4px; }
+
+  .section, .showcase { padding-left: 22px; padding-right: 22px; }
+  .section { padding-top: 66px; padding-bottom: 66px; }
+  .section h2, .showcase h2, .contact-section h2 { font-size: clamp(37px, 11vw, 48px); }
+  .section-heading { margin-bottom: 34px; }
+
+  .service-grid { grid-template-columns: 1fr; }
+  .service-card, .service-card:nth-child(2) { min-height: 165px; padding: 23px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .service-card:last-child { border-bottom: 0; }
+  .service-number { margin-bottom: 20px; }
+
+  .showcase { padding-top: 66px; }
+  .showcase-title > p:not(.eyebrow) { font-size: 15px; }
+  .steps { margin-top: 33px; }
+  .steps > div { padding: 20px 0; }
+
+  .restoration-case { gap: 16px; padding-bottom: 60px; }
+  .case-intro h3 { font-size: 31px; }
+  .before-gallery { gap: 7px; }
+  .before-gallery figure { min-height: 146px; }
+  .after-photo { min-height: 455px; }
+
+  .sale-section { padding-bottom: 66px !important; }
+  .sale-panel { padding-top: 66px !important; }
+  .product-grid { grid-template-columns: 1fr; gap: 16px; }
+  .product-card img { height: min(118vw, 440px); }
+  .product-card > div { padding: 18px 19px 20px; }
+  .product-card a { display: inline-block; padding: 8px 0; }
+
+  .contact-section { padding: 75px 22px; }
+  .contact-section .button { width: 100%; min-height: 54px; }
+  footer { justify-content: flex-start; padding: 27px 22px; }
+  footer img { width: 75px; }
+  footer p { width: 100%; line-height: 1.5; }
+  .whatsapp-float { right: 16px; bottom: 16px; width: 54px; height: 54px; }
+}
+
+@media (max-width: 360px) {
+  .hero h1 { font-size: 42px; }
+  .after-photo { min-height: 400px; }
+}
